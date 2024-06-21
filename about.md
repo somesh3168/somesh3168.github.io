@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-[Link to another page](another-page).
+[Home](/)
 
 At Visom Global, we merge technology and innovation to provide top-tier solutions in full stack web development, Search Engine Optimisation, and digital marketing. 
 

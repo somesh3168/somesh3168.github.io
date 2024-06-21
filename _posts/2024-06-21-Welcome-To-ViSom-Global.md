@@ -3,15 +3,13 @@ title: Welcome to Visom Global
 published: true
 ---
 
-[Link to another page](another-page).
-
 At Visom Global, we merge technology and innovation to provide top-tier solutions in full stack web development, Search Engine Optimisation, and digital marketing. 
 
+[Home](/)
 
-## [](#header-2)Tech Enthusianst
+## [](#header-2)Tech Enthusianst 
 
 Our expertise ensures your online presence is visually captivating, functionally robust, and highly optimized for search engines, enhancing both user experience and search rankings.
-
 
 ## [](#header-2)Partner with Us
 

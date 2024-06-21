@@ -1,7 +1,16 @@
 <footer>
+  <div style="display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+              align-items: center;
+              flex-wrap: nowrap;">
+    <img src="/assets/linkedin.png" alt="LinkedIn">
+    <img src="/assets/github.png" alt="GitHub">
+    <img src="/assets/x.png" alt="X">
+  </div>
   <a href="#">
     <span>
-        <b>{{ site.owner}}</b>
+      <b>{{ site.owner}}</b>
     </span>
     {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
     <span>© {{ currentyear }}</span>
