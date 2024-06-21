@@ -10,7 +10,7 @@ In today's competitive landscape, empowering talent transformations is crucial f
 
 ## [](#header-1)Understanding Your Organizational Needs
 
-At [`ViSom Global`], we specialize in driving impactful change through tailored talent development strategies.
+At `ViSom Global`, we specialize in driving impactful change through tailored talent development strategies.
 
 ## [](#header-2)Building a Resilient Workforce
 
@@ -24,4 +24,4 @@ Through personalized coaching, skills training, and leadership development progr
 
 Our comprehensive approach starts with understanding your unique organizational culture and strategic goals. 
 
-[`ViSom Global`] is your trusted partner in achieving sustainable talent transformations that drive long-term success.
+`ViSom Global` is your trusted partner in achieving sustainable talent transformations that drive long-term success.
