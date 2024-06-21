@@ -30,3 +30,6 @@ plugins:
 # Custom variables
 owner : "ViSom Global"
 year : "2024"
+
+# Google analytics tracker
+google_analytics: "G-2GN4JL1BN7"
