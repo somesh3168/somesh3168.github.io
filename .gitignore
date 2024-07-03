@@ -1,1 +1,8 @@
 help.txt
+Gemfile
+Gemfile.lock
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadat
+.DS_Store
