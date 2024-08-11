@@ -1,13 +1,331 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<ul>
-    {% for post in paginator.posts %}
-      <li>
-          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-      </li>
-    {% endfor %}
-</ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somesh Samadder - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#" class="nav-link" data-target="minimalist">Minimalist</a>
+        <a href="#" class="nav-link active" data-target="comprehensive">Comprehensive</a>
+        <a href="#" class="nav-link" data-target="advanced">Advanced</a>
+        <!-- <div class="dark-mode-toggle">
+            <label class="switch">
+                <input type="checkbox" id="toggle-dark-mode">
+                <span class="slider round"></span>
+            </label>
+        </div> -->
+
+        <!-- <input type="checkbox" class="sr-only" id="darkmode-toggle">
+            <label for="darkmode-toggle" class="toggle">
+                <span>Toggle dark mode</span>
+            </label> -->
+
+        <div class="theme-toggle class=" nav-link"">
+            <input type="checkbox" class="sr-only" id="darkmode-toggle">
+            <label for="darkmode-toggle" class="toggle">
+                <span>Toggle dark mode</span>
+            </label>
+        </div>
+
+
+    </div>
+
+    <!-- section for dark theme toggle -->
+    <!-- <div class="theme-toggle class="nav-link"">
+        <input type="checkbox" class="sr-only" id="darkmode-toggle">
+        <label for="darkmode-toggle" class="toggle">
+            <span>Toggle dark mode</span>
+        </label>
+     </div> -->
+
+
+    <div id="minimalist" class="container resume">
+        <h1>Somesh Samadder</h1>
+        <p><strong>Location:</strong> Danish Kunj, Bhopal</p>
+        <p><strong>Email:</strong> somesh3168@gmail.com</p>
+        <p><strong>Phone:</strong> <a href="tel:+91-7974904373">+(91) 79749 04373</a></p>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>A mid-level DevOps engineer with expertise in Python, Linux, Docker, and Kubernetes, offering over 5
+                years of experience in automating, scaling, and managing infrastructure.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Linux</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <p><strong>Software Engineer at Luxoft (DXC)</strong></p>
+            <p><em>Dec 2023 - Present</em></p>
+
+            <p><strong>Full Stack Developer at Sign In Scheduling</strong></p>
+            <p><em>July 2022 - July 2023</em></p>
+
+            <p><strong>Senior System Engineer at Infosys</strong></p>
+            <p><em>May 2021 - July 2022</em></p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>B.E. in Computer Science and Engineering</strong></p>
+            <p><em>Class of 2012</em></p>
+        </div>
+    </div>
+
+    <div id="comprehensive" class="container resume active">
+        <h1>Somesh Samadder</h1>
+        <div class="contact-info">
+            <p>Danish Kunj, Bhopal</p>
+            <p><a href="mailto:somesh3168@gmail.com">somesh3168@gmail.com</a> | <a href="tel:+91-7974904373">+(91) 79749 04373</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>A prospective System Design Engineer with a creative approach and a talent for automation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Software Engineer</strong> - Luxoft (DXC) | Dec 2023 - Present
+                    <p>Overseeing ETL processes: maintaining file generation workflows and transitioning from Jenkins to
+                        GitHub Actions. Conducting code reviews and taking ownership of file generation projects.
+                        Developing automation for streamlined ETL processes.</p>
+                </li>
+                <li>
+                    <strong>Full Stack Developer</strong> - Sign In Scheduling | Jul 2022 - Jun 2023
+                    <p>Full-fledged web development of features from core (backend APIs) using Python, Django, ReactJS,
+                        CSS. End-to-end feature testing, second-line support.</p>
+                </li>
+                <li>
+                    <strong>Senior System Engineer</strong> - Infosys | May 2021 - Jul 2022
+                    <p>Automation Testing Framework Maintenance using Python, Jenkins, YAML. Server-Side Data Rendering
+                        on Admin Panel (Python Django). API Testing using a wrapper function in Python for VOIP API
+                        (SoapUI).</p>
+                </li>
+                <li>
+                    <strong>Python Developer</strong> - Dhiyotech Pvt Ltd | Nov 2019 - Mar 2021
+                    <p>Backend web development with Python, Django. Automation testing using Selenium, Python, Java,
+                        TestNG, Cucumber, Jenkins. API Testing using Python, Requests, POSTMAN, Insomnia. ETL - scraping
+                        websites for university data, cleaning the data, and loading to GCP.</p>
+                </li>
+                <li>
+                    <strong>Associate</strong> - Magnet Brains | Mar 2019 - Oct 2019
+                </li>
+                <li>
+                    <strong>Customer Assistant</strong> - State Bank of India | Feb 2017 - Aug 2018
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Working Knowledge</h2>
+            <p>Jenkins (CI & CD), GitHub Actions workflows, Asana, Jira (Agile Practices), Docker, WSL.</p>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>ETL - Maintaining file generation workflows, code reviews, project ownership, transitioning
+                    workflows from Jenkins to GitHub Actions, and developing automation for streamlined processes.</li>
+                <li>Engineering Core & Integration - Feature rollout, API Integration, new theme migration, code
+                    reviews, and documentation.</li>
+                <li>VOIP Tech/ Delivery Unit - Maintained VOIP Tech/Delivery Unit focusing on automation APIs & YAML
+                    framework maintenance.</li>
+                <li>Python Automation Project SME - Automation, backup, regression. Jenkins, Shell, Python, GIT.</li>
+                <li>Virtual Fitting Room proof-of-concept using OpenCV and PIL, and WhatsApp bulk messaging using Python
+                    with Selenium.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>B.E. in Computer Science and Engineering</strong></p>
+            <p><em>Class of 2012</em></p>
+        </div>
+    </div>
+
+    <div id="advanced" class="container resume">
+        <h1>Somesh Samadder</h1>
+        <div class="profile-image" style="background-image: url('profile2.jpg');"></div>
+
+        <div class="contact-info">
+            <p>Danish Kunj, Bhopal</p>
+            <p><a href="mailto:somesh3168@gmail.com">somesh3168@gmail.com</a> | <a href="tel:+91-7974904373">+(91) 79749 04373</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>A prospective System Design Engineer with a creative approach and a talent for automation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Software Engineer</strong> - Luxoft (DXC) | Dec 2023 - Present
+                    <p>Overseeing ETL processes: maintaining file generation workflows and transitioning from Jenkins to
+                        GitHub Actions. Conducting code reviews and taking ownership of file generation projects.
+                        Developing automation for streamlined ETL processes.</p>
+                </li>
+                <li>
+                    <strong>Full Stack Developer</strong> - Sign In Scheduling | Jul 2022 - Jun 2023
+                    <p>Full-fledged web development of features from core (backend APIs) using Python, Django, ReactJS,
+                        CSS. End-to-end feature testing, second-line support.</p>
+                </li>
+                <li>
+                    <strong>Senior System Engineer</strong> - Infosys | May 2021 - Jul 2022
+                    <p>Automation Testing Framework Maintenance using Python, Jenkins, YAML. Server-Side Data Rendering
+                        on Admin Panel (Python Django). API Testing using a wrapper function in Python for VOIP API
+                        (SoapUI).</p>
+                </li>
+                <li>
+                    <strong>Python Developer</strong> - Dhiyotech Pvt Ltd | Nov 2019 - Mar 2021
+                    <p>Backend web development with Python, Django. Automation testing using Selenium, Python, Java,
+                        TestNG, Cucumber, Jenkins. API Testing using Python, Requests, POSTMAN, Insomnia. ETL - scraping
+                        websites for university data, cleaning the data, and loading to GCP.</p>
+                </li>
+                <li>
+                    <strong>Associate</strong> - Magnet Brains | Mar 2019 - Oct 2019
+                </li>
+                <li>
+                    <strong>Customer Assistant</strong> - State Bank of India | Feb 2017 - Aug 2018
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Working Knowledge</h2>
+            <p>Jenkins (CI & CD), GitHub Actions workflows, Asana, Jira (Agile Practices), Docker, WSL.</p>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>ETL - Maintaining file generation workflows, code reviews, project ownership, transitioning
+                    workflows from Jenkins to GitHub Actions, and developing automation for streamlined processes.</li>
+                <li>Engineering Core & Integration - Feature rollout, API Integration, new theme migration, code
+                    reviews, and documentation.</li>
+                <li>VOIP Tech/ Delivery Unit - Maintained VOIP Tech/Delivery Unit focusing on automation APIs & YAML
+                    framework maintenance.</li>
+                <li>Python Automation Project SME - Automation, backup, regression. Jenkins, Shell, Python, GIT.</li>
+                <li>Virtual Fitting Room proof-of-concept using OpenCV and PIL, and WhatsApp bulk messaging using Python
+                    with Selenium.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technology Exposure</h2>
+            <div class="technology">
+                <div>
+                    <p>Python</p>
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>React JS</p>
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Linux</p>
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Docker</p>
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Awards</h2>
+            <div class="awards">
+                <div>Glory Award</div>
+                <div>Insta Award</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Strengths</h2>
+            <div class="strengths">
+                <div>Observant individual with a keen eye.</div>
+                <div>Adept at independent learning.</div>
+                <div>Efficient in task execution.</div>
+                <div>Collaborative team member.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Area of Interest</h2>
+            <div class="interests">
+                <div>System Design</div>
+                <div>Automated Solutions</div>
+                <div>Network Security</div>
+                <div>Azure Cloud Technology</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Teaching Online Sessions</h2>
+            <div class="teaching">
+                <div>Basic Python & Java</div>
+                <div>Selenium Webdriver Python</div>
+                <div>Selenium Webdriver JAVA</div>
+                <div>TestNG Framework</div>
+                <div>Xpath Basics</div>
+                <div>Postman API Testing Basic</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.E (CSE):</strong> 69.69% - Class of 2012</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Personal Profile</h2>
+            <ul>
+                <li><strong>Date of Birth:</strong> 19/12/1989</li>
+                <li><strong>Known Languages:</strong> English, Hindi, Bengali</li>
+                <li><strong>Address:</strong> Danish Kunj, Kolar Road, Bhopal, M.P</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/somesh-kumar-520703165/"
+                        target="_blank">https://www.linkedin.com/in/somesh-kumar-520703165/</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Samadderp"
+                        target="_blank">https://github.com/Samadderp</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
