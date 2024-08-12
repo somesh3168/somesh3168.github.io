@@ -32,7 +32,7 @@ h2 {
     border-bottom: 2px solid #adb2b7;
 }
 
-h2::after {
+/* h2::after {
     content: '';
     width: 50px;
     height: 2px;
@@ -40,7 +40,7 @@ h2::after {
     position: absolute;
     left: 0;
     bottom: 0;
-}
+} */
 
 p,
 li {
@@ -347,6 +347,80 @@ input:checked + .slider:before {
     left: -9999px;
     opacity: 0;
   }
+/* exp table css */
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+/* Custom scrollbar styling */
+.table-responsive::-webkit-scrollbar {
+    height: 12px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f2f2f2;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f2f2f2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+thead {
+    /* background-color: #f2f2f2; */
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    /* color: #333; */
+    border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+    /* color: #555; */
+}
+
+/* tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+} */
+
+tbody td:first-child {
+    font-weight: bold;
+    /* color: #333; */
+}
+
+tbody td:last-child {
+    line-height: 1.6;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
 
 
 @media (max-width: 768px) {
@@ -371,5 +445,16 @@ input:checked + .slider:before {
     }
     .toggle {
         font-size: .81rem; 
+    }
+}
+
+/* Media query for narrow screens */
+@media screen and (max-width: 56rem) {
+    .table-responsive {
+        max-width: 100%;
+    }
+    
+    table {
+        min-width: 56rem;
     }
 }
